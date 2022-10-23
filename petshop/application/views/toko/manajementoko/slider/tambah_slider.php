@@ -1,0 +1,35 @@
+
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Form Tambah Data</h4>
+                  <p class="card-description">
+                    Tambah Data Slider
+                  </p>
+                  <form class="forms-sample" action="<?=base_url();?>toko/tambah_aksi_slider" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                      <label for="exampleInputUsername1">Nama Slider</label>
+                      <input type="text" name="nama" class="form-control" id="exampleInputUsername1" placeholder="Nama Slider">
+                    </div>
+                    <div class="form-group">
+                        <label for="barcode">Gambar Produk</label>
+                        <input type="file" name="fotopost" class="form-control" placeholder="Gambar Produk">
+                    </div>
+                    <!-- <div class="form-check form-check-flat form-check-primary">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">
+                        Remember me
+                      </label>
+                    </div> -->
+                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                    <a class="btn btn-light" href="<?php echo base_url(); ?>toko/slider" role="button">Back</a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
